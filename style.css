@@ -92,20 +92,20 @@ section{
     justify-content: center;
 }
 .boxes{
-    min-width: 60%;
+    width: 50%;
 }
 .row{
     width:100%;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     flex-wrap: wrap
 }
 .row div{
-    min-width:24%;
+    min-width:22%;
     height:230px;
     border:1px solid white;
     border-radius:10px;
-    margin:10px 0;
+    margin:10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,7 +114,7 @@ section{
     cursor: pointer
 }
 .row div:hover{
-   transform: scale(1.06)
+   background-color:rgba(165, 189, 206, 0.74)
 }
 .row div img{
     width:120px;
@@ -136,11 +136,10 @@ section{
     .laguage-select{
         margin: 0;
     }
-    .countrie-name{
-         right:5%;
-         width: 90%;
-         justify-content:center;
+    .boxes{
+        width: 100%;
     }
+    
 }
 @media screen and (max-width:600px){
     .countrie-name{
@@ -152,7 +151,7 @@ section{
 
 @media screen and (min-width:400px) and (max-width:1000px){
     .row,.boxes{
-        min-width:100%
+        min-width:80%
     }
     .row div{
         min-width:40%;
@@ -161,10 +160,10 @@ section{
 }
 @media screen and (min-width:1000px) and (max-width:1200px){
     .row,.boxes{
-        min-width:85%
+        min-width:70%
     }
     .row div{
         min-width:23%;
-        margin: 10px 0;
+        margin: 10px;
     }
 }
