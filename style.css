@@ -1,0 +1,170 @@
+:root{
+    --bg-color: hsl(256,33,10);
+    --dot-color: hsl(256,33,70);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    background-color:rgb(4, 81, 133);
+    overflow-x: hidden;
+}
+header{
+    width:100;
+    display: flex;
+    color:white;
+    padding:30px 50px;
+    justify-content:flex-end;
+    height:100px
+}
+header p{
+    display:inline-block;
+    margin: 5px;
+}
+.laguage-select{
+    margin-right: 17%;
+}
+.laguage-select img{
+    width:20px
+}
+.clip-path{
+    background-color:white;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 30px;
+    height: 30px;
+    display:none;
+    position:absolute;
+    z-index: 5
+}
+.countrie-name{
+    position: absolute;
+    min-width:35%;
+    background-color: #fff;
+    right:18%;
+    margin:20px 0;
+    border-radius: 20px;
+    display:none;
+    justify-content: space-between;
+    padding: 50px;
+    z-index: 5;
+}
+
+li{
+    margin: 25px 10px;
+}
+li img{
+    width:40px;
+    margin:0 10px;
+    box-shadow: 0 0 5px gray
+
+}
+a{
+    text-decoration:none;
+    color:black;
+    display:flex
+}
+.laguage-select:hover .clip-path{
+    display: inline-block;
+}
+.laguage-select:hover .countrie-name{
+    display:flex
+}
+main{
+    width:100%;
+    display: flex;
+    /* justify-content:center; */
+    flex-direction: column;
+    align-items: center
+}
+main  h1{
+    width:100%;
+    padding: 30px 0;
+    text-align: center;
+    color: white
+}
+section{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.boxes{
+    min-width: 60%;
+}
+.row{
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap
+}
+.row div{
+    min-width:24%;
+    height:230px;
+    border:1px solid white;
+    border-radius:10px;
+    margin:10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer
+}
+.row div:hover{
+   transform: scale(1.06)
+}
+.row div img{
+    width:120px;
+    height:90px;
+    border-radius: 20px;
+    border:3px solid white;
+    margin:20px 0
+}
+.row div span{
+    margin:10px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+@media screen and (max-width:400px){
+    .row div{
+        margin: 20px;
+        min-width:90%
+    }
+    .laguage-select{
+        margin: 0;
+    }
+    .countrie-name{
+         right:5%;
+         width: 90%;
+         justify-content:center;
+    }
+}
+@media screen and (max-width:600px){
+    .countrie-name{
+         right:5%;
+         width: 90%;
+         justify-content:center;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:1000px){
+    .row,.boxes{
+        min-width:100%
+    }
+    .row div{
+        min-width:40%;
+        margin: 10px;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1200px){
+    .row,.boxes{
+        min-width:85%
+    }
+    .row div{
+        min-width:23%;
+        margin: 10px 0;
+    }
+}
