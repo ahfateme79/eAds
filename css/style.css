@@ -330,6 +330,10 @@ form input::placeholder , .input i{
     cursor:pointer;
     font-size: 16px;
 }
+.submit-btn button:hover{
+    background-color: #49af51;
+
+}
 .login-link{
     text-align: center;
     color:rgb(167, 163, 166)
