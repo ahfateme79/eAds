@@ -8,6 +8,7 @@ body{
     background-color:rgb(4, 81, 133);
     width:100%;
     min-height:100vh;
+    background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg);
 }
 header{
     width:100;
@@ -31,15 +32,15 @@ header p{
     background-color:white;
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     display:none;
     position:absolute;
     z-index: 5
 }
 .countrie-name{
     position: absolute;
-    min-width:35%;
+    min-width:30%;
     background-color: #fff;
     right:18%;
     margin:20px 0;
@@ -51,12 +52,18 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 li{
-    margin: 25px 10px;
+    margin:10px;
+    padding:10px;
+
+}
+li:hover{
+    background-color:rgb(210, 218, 218);
+    border-radius: 250px
 }
 li img{
     width:40px;
     margin:0 10px;
-    box-shadow: 0 0 5px gray
+    box-shadow: 0 0 5px rgb(172, 169, 169)
 
 }
 ul li a{
@@ -115,7 +122,7 @@ section{
     cursor: pointer
 }
 .row div:hover{
-   background-color:rgba(165, 189, 206, 0.74)
+   background-color:rgba(165, 189, 206, 0.438)
 }
 .row div img{
     width:120px;
