@@ -355,3 +355,84 @@ form input::placeholder , .input i{
     }
     
 }
+
+
+/* Course View Template */
+.wrapper{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(62, 65, 109);
+}
+.code{
+    min-width: 46%;
+    padding: 20px
+}
+h1{
+    margin: 30px 0;
+    font-size: 2.5rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0;
+    flex-wrap:wrap
+}
+
+.wrapper p{
+    font-size: 1.2rem;
+    line-height: 1.5
+}
+span{
+    padding:2px 5px;
+    background-color: rgb(217, 232, 251);
+    border-radius: 5px;
+
+}
+
+
+/* code box */
+
+pre,code{
+    width:100%;
+    height:130px;
+    background-color:rgb(47, 49, 82);
+    border-radius: 10px;
+    margin: 30px 0;
+    color:rgb(255, 151, 161);
+    font-size: .9rem;
+    line-height:1.2;
+}
+
+/* video style */
+
+.video-player{
+    background-color:#59e06491;
+    padding: 10px;
+    border-radius: 10px;
+    color: #066e3df3;
+    margin:0 10px
+}
+video{
+    width: 300px;
+    height:200px;
+    }
+
+
+/* responsiv */
+@media screen and (max-width:800px) {
+    pre,code{
+        font-size:.7rem;
+    }
+    .wrapper p{
+        font-size:1rem
+    }
+    video{
+        width:100%;
+        }
+        .video-player{
+            margin: 0;
+        }
+}
