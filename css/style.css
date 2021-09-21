@@ -1,119 +1,136 @@
-body{
-    width:100%;
+body {
+    width: 100%;
     overflow-x: hidden;
 }
 
+
 /*styles of header */
-.container{
-    background-color:rgb(4, 81, 133);
-    width:100%;
-    min-height:100vh;
+
+.container {
+    background-color: rgb(4, 81, 133);
+    width: 100%;
+    min-height: 100vh;
     background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/star-pattern.svg);
 }
-header{
-    width:100;
+
+header {
+    width: 100;
     display: flex;
-    color:white;
-    padding:30px 50px;
-    justify-content:flex-end;
-    height:100px
+    color: white;
+    padding: 30px 50px;
+    justify-content: flex-end;
+    height: 100px
 }
-header p{
-    display:inline-block;
+
+header p {
+    display: inline-block;
     margin: 5px;
 }
-.laguage-select{
+
+.laguage-select {
     margin-right: 17%;
 }
-.laguage-select img{
-    width:20px
+
+.laguage-select img {
+    width: 20px
 }
-.clip-path{
-    background-color:white;
+
+.clip-path {
+    background-color: white;
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     width: 20px;
     height: 20px;
-    display:none;
-    position:absolute;
+    display: none;
+    position: absolute;
     z-index: 5
 }
-.countrie-name{
+
+.countrie-name {
     position: absolute;
-    min-width:30%;
+    min-width: 30%;
     background-color: #fff;
-    right:18%;
-    margin:20px 0;
+    right: 18%;
+    margin: 20px 0;
     border-radius: 20px;
-    display:none;
+    display: none;
     justify-content: space-between;
     padding: 50px;
     z-index: 5;
 }
 
-.countrie-name li{
-    margin:10px;
-    padding:10px;
-
+.countrie-name li {
+    margin: 10px;
+    padding: 10px;
 }
-.countrie-name li:hover{
-    background-color:rgb(210, 218, 218);
+
+.countrie-name li:hover {
+    background-color: rgb(210, 218, 218);
     border-radius: 250px
 }
-li img{
-    width:40px;
-    margin:0 10px;
-    box-shadow: 0 0 5px rgb(172, 169, 169)
 
+li img {
+    width: 40px;
+    margin: 0 10px;
+    box-shadow: 0 0 5px rgb(172, 169, 169)
 }
-.countrie-name ul li a{
-    text-decoration:none;
-    color:black;
-    display:flex
+
+.countrie-name ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex
 }
-.laguage-select:hover .clip-path{
+
+.laguage-select:hover .clip-path {
     display: inline-block;
 }
-.laguage-select:hover .countrie-name{
-    display:flex
+
+.laguage-select:hover .countrie-name {
+    display: flex
 }
+
 
 /* styles of main */
 
-main{
-    width:100%;
+main {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center
 }
-main  h1{
-    width:100%;
+
+main h1 {
+    width: 100%;
     padding: 30px 0;
     text-align: center;
     color: white
 }
-section{
-    width:100%;
+
+section {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
-.boxes{
+
+.boxes {
     width: 50%;
 }
 
+
 /* big row of country box */
 
-.row{
-    width:100%;
+.row {
+    width: 100%;
     display: flex;
     flex-wrap: wrap
 }
-.row div{
-    min-width:22%;
-    height:230px;
-    border:1px solid white;
-    border-radius:10px;
-    margin:10px;
+
+.row div {
+    min-width: 22%;
+    height: 230px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,392 +138,443 @@ section{
     color: white;
     cursor: pointer
 }
-.row div:hover{
-   background-color:rgba(165, 189, 206, 0.438)
+
+.row div:hover {
+    background-color: rgba(165, 189, 206, 0.438)
 }
-.row div img{
-    width:120px;
-    height:90px;
+
+.row div img {
+    width: 120px;
+    height: 90px;
     border-radius: 20px;
-    border:3px solid white;
-    margin:20px 0
+    border: 3px solid white;
+    margin: 20px 0
 }
-.row div span{
-    margin:10px 0;
+
+.row div span {
+    margin: 10px 0;
     font-weight: bold;
     text-transform: capitalize;
 }
 
+
 /* responsive */
-@media screen and (max-width:400px){
-    .row div{
+
+@media screen and (max-width:400px) {
+    .row div {
         margin: 20px;
-        min-width:90%
+        min-width: 90%
     }
-    .laguage-select{
+    .laguage-select {
         margin: 0;
     }
-    .boxes{
+    .boxes {
         width: 100%;
     }
-    
 }
-@media screen and (max-width:600px){
-    .countrie-name{
-         right:5%;
-         width: 90%;
-         justify-content:center;
+
+@media screen and (max-width:600px) {
+    .countrie-name {
+        right: 5%;
+        width: 90%;
+        justify-content: center;
     }
 }
 
-@media screen and (min-width:400px) and (max-width:1000px){
-    .row,.boxes{
-        min-width:80%
+@media screen and (min-width:400px) and (max-width:1000px) {
+    .row,
+    .boxes {
+        min-width: 80%
     }
-    .row div{
-        min-width:40%;
-        margin: 10px;
-    }
-}
-@media screen and (min-width:1000px) and (max-width:1200px){
-    .row,.boxes{
-        min-width:70%
-    }
-    .row div{
-        min-width:23%;
+    .row div {
+        min-width: 40%;
         margin: 10px;
     }
 }
 
-
+@media screen and (min-width:1000px) and (max-width:1200px) {
+    .row,
+    .boxes {
+        min-width: 70%
+    }
+    .row div {
+        min-width: 23%;
+        margin: 10px;
+    }
+}
 
 
 /************8 register page style *****************/
 
-.register{
-    width:100%;
-    min-height:100vh;
+.register {
+    width: 100%;
+    min-height: 100vh;
     background-color: rgb(239, 239, 255);
     display: flex;
     justify-content: center;
     align-items: center
 }
-.register i{
-    margin:0 10px;
-    font-size:20px
+
+.register i {
+    margin: 0 10px;
+    font-size: 20px
 }
 
+
 /***** form container */
-.form{
+
+.form {
     max-width: 400px;
-    min-height:600px;
-    box-shadow: 0px 0px 6px 0px #0000001a;;
+    min-height: 600px;
+    box-shadow: 0px 0px 6px 0px #0000001a;
+    ;
     background-color: #ffff;
     border-radius: 10px;
-    padding:30px
+    padding: 30px
 }
-.topic{
+
+.topic {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column
 }
-.topic img{
-    width:80%;
+
+.topic img {
+    width: 80%;
     margin: 10px
 }
-.topic h1{
+
+.topic h1 {
     text-align: center
 }
 
+
 /* style of bttons that lgin with social media */
 
-.sign-with-media{
+.sign-with-media {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px 30px
 }
-.sign-with-media div{
-    width:100%;
-    padding:15px;
+
+.sign-with-media div {
+    width: 100%;
+    padding: 15px;
     margin: 5px 0;
     border-radius: 5px;
     display: flex;
 }
-.sign-with-media div span{
+
+.sign-with-media div span {
     color: #fff;
 }
-.sign-with-media i{
+
+.sign-with-media i {
     color: #fff;
 }
-#facebook{
-    background-color:#3a579d
+
+#facebook {
+    background-color: #3a579d
 }
-#google{
-    background-color:#ea4335
+
+#google {
+    background-color: #ea4335
 }
-#apple{
-    background-color:#000000
+
+#apple {
+    background-color: #000000
 }
-.title{
+
+.title {
     width: 100%;
     position: relative;
     display: flex
 }
-.title p{
+
+.title p {
     margin: 10px auto;
     color: rgb(177, 169, 176);
+}
 
-}
-.title p::before{
+.title p::before {
     content: '';
-    width:18%;
+    width: 18%;
     height: 2px;
     background-color: rgb(190, 182, 189);
-    display:block;
+    display: block;
     position: absolute;
-    transform: translate(-75px,10px);
+    transform: translate(-75px, 10px);
 }
-.title p::after{
+
+.title p::after {
     content: '';
-    width:18%;
+    width: 18%;
     height: 2px;
     background-color: rgb(190, 182, 189);
-    display:block;
+    display: block;
     position: absolute;
-    transform: translate(148px,-8px);
+    transform: translate(148px, -8px);
 }
+
 
 /* style of inputs */
 
-form{
-    display:flex;
+form {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center
 }
-.input{
-    width:85%;
-    padding:15px 20px;
-    display:flex;
+
+.input {
+    width: 85%;
+    padding: 15px 20px;
+    display: flex;
     border: 2px solid rgb(228, 220, 227);
-    border-radius:5px;
+    border-radius: 5px;
     margin: 10px 0;
 }
-form input::placeholder , .input i{
-    color:rgb(211, 201, 209)
+
+form input::placeholder,
+.input i {
+    color: rgb(211, 201, 209)
 }
-.Privacy{
-    width:100%;
+
+.Privacy {
+    width: 100%;
     text-align: center
 }
-.Privacy p{
-    width:100%;
-    font-size:13px;
-    color:rgb(190, 184, 189)
 
+.Privacy p {
+    width: 100%;
+    font-size: 13px;
+    color: rgb(190, 184, 189)
 }
-.Privacy a{
-    color:rgb(190, 184, 189);
+
+.Privacy a {
+    color: rgb(190, 184, 189);
     border-bottom: 1px solid rgb(190, 184, 189);
 }
 
+
 /* sign up button */
 
-.submit-btn{
-    width:100%;
-    display:flex;
+.submit-btn {
+    width: 100%;
+    display: flex;
     justify-content: center;
-    margin:20px 0
+    margin: 20px 0
 }
-.submit-btn button{
-    width:90%;
-    padding:15px 20px;
-    color:#fff;
+
+.submit-btn button {
+    width: 90%;
+    padding: 15px 20px;
+    color: #fff;
     background-color: #62d76b;
     border-radius: 50px;
-    cursor:pointer;
+    cursor: pointer;
     font-size: 16px;
 }
-.submit-btn button:hover{
-    background-color: #49af51;
 
+.submit-btn button:hover {
+    background-color: #49af51;
 }
-.login-link{
+
+.login-link {
     text-align: center;
-    color:rgb(167, 163, 166)
+    color: rgb(167, 163, 166)
 }
-.login-link a{
-    color:#62d76b;
+
+.login-link a {
+    color: #62d76b;
 }
+
 
 /* resposive form */
+
 @media screen and (max-width:375px) {
-    .sign-with-media div span{
+    .sign-with-media div span {
         font-size: 12px;
     }
-    .title p::before{
-        transform: translate(-60px,10px);
+    .title p::before {
+        transform: translate(-60px, 10px);
     }
-    .title p::after{
-        transform: translate(138px,-8px);
+    .title p::after {
+        transform: translate(138px, -8px);
     }
-    
 }
 
 
 /* Course View Template */
-.wrapper{
-    width:100%;
+
+.wrapper {
+    width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(62, 65, 109);
 }
-.code{
+
+.code {
     min-width: 46%;
     padding: 20px
 }
-h1{
+
+h1 {
     margin: 30px 0;
     font-size: 2.5rem;
 }
-.flex{
+
+.flex {
     display: flex;
     justify-content: space-between;
-    margin:10px 0;
-    flex-wrap:wrap
+    margin: 10px 0;
+    flex-wrap: wrap
 }
 
-.wrapper p{
+.wrapper p {
     font-size: 1.2rem;
     line-height: 1.5
 }
-.wrapper span{
-    padding:2px 5px;
+
+.wrapper span {
+    padding: 2px 5px;
     background-color: rgb(217, 232, 251);
     border-radius: 5px;
-
 }
 
 
 /* code box */
 
-pre,code{
-    width:100%;
-    height:130px;
-    background-color:rgb(47, 49, 82);
+pre,
+code {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(47, 49, 82);
     border-radius: 10px;
     margin: 30px 0;
-    color:rgb(255, 151, 161);
+    color: rgb(255, 151, 161);
     font-size: .9rem;
-    line-height:1.2;
+    line-height: 1.2;
 }
+
 
 /* video style */
 
-.video-player{
-    background-color:#59e06491;
+.video-player {
+    background-color: #59e06491;
     padding: 10px;
     border-radius: 10px;
     color: #066e3df3;
-    margin:0 10px
+    margin: 0 10px
 }
-video{
+
+video {
     width: 300px;
-    height:200px;
-    }
+    height: 200px;
+}
 
 
 /* responsiv */
+
 @media screen and (max-width:800px) {
-    pre,code{
-        font-size:.7rem;
+    pre,
+    code {
+        font-size: .7rem;
     }
-    .wrapper p{
-        font-size:1rem
+    .wrapper p {
+        font-size: 1rem
     }
-    video{
-        width:100%;
-        }
-        .video-player{
-            margin: 0;
-        }
+    video {
+        width: 100%;
+    }
+    .video-player {
+        margin: 0;
+    }
 }
-
-
-
 
 
 /* footer style */
 
-footer{
-    width:100%;
+footer {
+    width: 100%;
     background-color: rgb(47, 49, 82);
     display: flex;
     justify-content: center;
     padding: 30px;
 }
-.footer{
-    width:50%
+
+.footer {
+    width: 50%
 }
-.lists{
-    width:100%;
+
+.lists {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(112, 118, 121);
     padding: 20px 0
 }
-.lists li{
+
+.lists li {
     margin: 5px;
 }
-.lists li a{
+
+.lists li a {
     color: #fff;
 }
-.lists li:hover{
-    background-color:transparent;
 
+.lists li:hover {
+    background-color: transparent;
 }
-.lists li a:hover{
-    border-bottom:1px solid #fff
+
+.lists li a:hover {
+    border-bottom: 1px solid #fff
 }
-.copyright{
+
+.copyright {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     padding: 30px 0;
     color: rgb(172, 173, 175);
 }
-footer button{
+
+footer button {
     margin: 20px;
-    padding:10px;
+    padding: 10px;
     background-color: antiquewhite;
 }
-.mimo{
-    font-size:2rem;
-    color:#ffff
+
+.mimo {
+    font-size: 2rem;
+    color: #ffff
 }
 
 
 /* verification form */
-.alert{
-    background-color:#bcf8da;
-    color:rgb(10, 112, 69);
-    padding:40px 20px;
+
+.alert {
+    background-color: #bcf8da;
+    color: rgb(10, 112, 69);
+    padding: 40px 20px;
     border-radius: 10px;
     margin: 20px 0;
-    font-size:17px;
-    line-height:1.5
+    font-size: 17px;
+    line-height: 1.5
 }
 
 
 /* forgot password form */
-.icon{
+
+.icon {
     text-align: center;
     padding: 20px 0
 }
-.icon i{
-    font-size:50px
+
+.icon i {
+    font-size: 50px
 }
